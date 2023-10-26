@@ -6,8 +6,10 @@
 :root{
     --color-main: #161719;
     --color-main-2: #1a1c1f;
+    --color-white: #ffffff;
     --color-main-font: #ffffff;
     --color-secondary-font: #aaaaaa;
+    --colorlink-font: #3685c2;
 
     --font: 'Inter', sans-serif;
 
@@ -19,6 +21,7 @@
     --font-black: 900;
 
     --tool-title-size: 9rem;
+    --tool-text-size: 4rem;
 
     --index-title-size: 4rem;
     --index-text-size: 3.1rem;
@@ -65,19 +68,29 @@ body::-webkit-scrollbar-thumb{
 .tool-title {
     font-size: var(--tool-title-size);
 }
-header {
-    width: 100%;
+.tool-subtitle {
+    font-size: var(--tool-text-size);
+    font-style: italic;
+    color: var(--color-secondary-font);
+    font-weight: var(--font-regular);
+}
+p {
+    font-size: var(--tool-text-size);
+    line-height: 150%;
+}
+.text {
+    font-size: var(--tool-text-size);
+    line-height: 150%;
+    font-weight: var(--font-regular);
+}
+
+section {
     height: 100vh;
-    background-image: url('../img/5488082.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 .tools-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 .tools-grid {
     width: 95%;
@@ -96,7 +109,7 @@ header {
     height: 100%;
 }
 .index-container::-webkit-scrollbar {
-    width: 5px;
+    width: 4px;
     background-color:  var(--color-main-2);
     border-radius: 10px;
 }
@@ -131,6 +144,7 @@ header {
     color: var(--color-secondary-font);
     text-decoration: none;
     font-size: var(--index-text-size);
+    display: block;
 }
 .index-item__list-item {
     padding: 0px 3px;

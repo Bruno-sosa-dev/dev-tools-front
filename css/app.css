@@ -1,0 +1,52 @@
+.app-container {
+    max-width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0px 10px;
+}
+.app-container::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 10px;
+    background-color:  var(--color-main-2);
+}
+.app-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: url('../img/scrollbar.jpg');
+}
+.app-content {
+    margin-top: 20px;
+    position: relative;
+    width: calc(100% - 50px);
+    left: 50px;
+    display: grid;
+    gap: 30px;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.title-img {
+    width: 45px;
+}
+.app-data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.app-data__item {
+    display: grid;
+    gap: 5px;
+}
+.app-data__title-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.app-data__item-img {
+    width: 20px;
+}
+.app-data__link {
+    font-size: var(--tool-text-size);
+    color: var(--colorlink-font);
+}
